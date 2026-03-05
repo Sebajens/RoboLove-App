@@ -4,7 +4,7 @@ export async function loadProfile() {
   const glowBox = document.querySelector(".glow-box");
 
   // Hent JSON-data
-  const response = await fetch("../data/robots.json");
+  const response = await fetch("./data/robots.json");
   const robotData = await response.json();
 
   // Find S-47

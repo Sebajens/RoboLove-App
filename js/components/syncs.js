@@ -47,7 +47,7 @@ export async function loadSyncs() {
   }
 
   // Hent robotdata
-  const response = await fetch("../data/robots.json");
+  const response = await fetch("./data/robots.json");
   const data = await response.json();
 
   const syncedBots = data.robots.filter((bot) => syncedIds.includes(bot.id));

@@ -74,7 +74,7 @@ export async function loadSyncRobotProfile() {
     return;
   }
 
-  const response = await fetch("../data/robots.json");
+  const response = await fetch("./data/robots.json");
   const data = await response.json();
   const bot = data.robots.find((r) => r.id == selectedId);
 

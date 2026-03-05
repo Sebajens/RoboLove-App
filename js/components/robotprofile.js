@@ -28,7 +28,7 @@ export async function loadRobotProfile() {
     return;
   }
 
-  const response = await fetch("../data/robots.json");
+  const response = await fetch("./data/robots.json");
   const data = await response.json();
   // henter JSON-filen og laver den om til JavaScript
 
