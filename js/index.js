@@ -12,7 +12,7 @@ loadHeader();
 const page = window.location.pathname.toLowerCase();
 
 // Forside
-if (page.includes("index.html") || page === "/") {
+if (page.includes("index.html") || page === "/" || page.endsWith("/")) {
   loadWelcome();
 }
 
