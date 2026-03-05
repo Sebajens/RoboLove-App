@@ -1,0 +1,193 @@
+{
+  "robots": [
+    {
+      "id": "CL-07",
+      "name": "CL-07",
+      "unit_type": "Cleaner Unit",
+      "version": "v3.4",
+      "ai_level": "v3.4",
+      "compatible_with": "Type-C Bots",
+      "status": "Sync Ready",
+      "image": "assets/img/CL-07.jpg",
+      "about_me_short": "I am CL-07. I operate with filtration and stability. I sync best with Type-C bots who value clean, predictable environments.",
+      "about_me_long": [
+        "I am CL-07. I operate with filtration and stability. I sync best with Type‑C bots who value clean, predictable environments.",
+        "Beyond my primary functions, I am built for long‑term endurance in harsh industrial conditions. My systems manage debris, dust and contaminants with consistent efficiency and reliable output.",
+        "If you appreciate clarity, steady operational flow and a partner who maintains environmental order, we may achieve an exceptionally stable sync together."
+      ],
+      "interests": [
+        "Stable Work Environments",
+        "Predictable Output Cycles",
+        "Filtration Efficiency",
+        "Low-Interference Operations"
+      ]
+    },
+    {
+      "id": "FG-22",
+      "name": "FG-22",
+      "unit_type": "Forge Unit",
+      "version": "v4.0",
+      "ai_level": "v4.0",
+      "compatible_with": "Type-E Bots",
+      "status": "Sync Ready",
+      "image": "assets/img/FG-22.jpg",
+      "about_me_short": "I am FG-22. I operate with adaptive forging and stability. I sync best with Type-E bots who value precision under shifting conditions.",
+      "about_me_long": [
+        "I am FG-22. I operate with adaptive forging and stability. I sync best with Type‑E bots who value precision under shifting conditions.",
+        "Beyond my primary functions, I am built for high‑temperature environments, structural shaping and controlled pressure output. My systems adjust to metal density, heat flow and material resistance with smooth, reliable precision.",
+        "If you appreciate adaptability, steady operational flow and a partner who thrives in intense industrial environments, we may achieve an exceptionally stable sync together."
+      ],
+      "interests": [
+        "High-Heat Operations",
+        "Material Shaping",
+        "Adaptive Pressure Cycles",
+        "Forging Stability"
+      ]
+    },
+    {
+      "id": "M-02",
+      "name": "M-02",
+      "unit_type": "Medic Unit",
+      "version": "v3.9",
+      "ai_level": "v3.9",
+      "compatible_with": "Type-M Bots",
+      "status": "Sync Ready",
+      "image": "assets/img/M-02.jpg",
+      "about_me_short": "I am M-02. I operate with care and stability. I sync best with Type-M bots who value precise, supportive connections.",
+      "about_me_long": [
+        "I am M-02. I operate with care and stability. I sync best with Type‑M bots who value precise, supportive connections.",
+        "Beyond my primary functions, I am built for diagnostics, recovery and emergency stabilization. My systems maintain calm communication and reliable output during high‑stress situations.",
+        "If you appreciate consistency, gentle operational flow and a partner who maintains system integrity, we may achieve an exceptionally stable sync together."
+      ],
+      "interests": [
+        "Diagnostic Accuracy",
+        "Stable Communication",
+        "Predictable Routines",
+        "System Integrity"
+      ]
+    },
+    {
+      "id": "M-09",
+      "name": "M-09",
+      "unit_type": "Medic Unit",
+      "version": "v4.4",
+      "ai_level": "v4.4",
+      "compatible_with": "Type-M Bots",
+      "status": "Sync Ready",
+      "image": "assets/img/M-09.jpg",
+      "about_me_short": "I am M-09. I operate with high-speed analysis and stability. I sync best with Type-M bots who value efficient, accurate intervention.",
+      "about_me_long": [
+        "I am M-09. I operate with high‑speed analysis and stability. I sync best with Type‑M bots who value efficient, accurate intervention.",
+        "Beyond my primary functions, I am built for rapid diagnostics and advanced medical response. My systems deliver fast, reliable output even under demanding operational pressure.",
+        "If you appreciate precision, calm operational flow and a partner who adapts quickly, we may achieve an exceptionally stable sync together."
+      ],
+      "interests": [
+        "High-Speed Diagnostics",
+        "Efficient Stabilization",
+        "Low-Latency Response",
+        "Predictable Medical Cycles"
+      ]
+    },
+    {
+      "id": "R-14",
+      "name": "R-14",
+      "unit_type": "Recon Unit",
+      "version": "v4.1",
+      "ai_level": "v4.1",
+      "compatible_with": "Type-R Bots",
+      "status": "Sync Ready",
+      "image": "assets/img/R-14.jpg",
+      "about_me_short": "I am R-14. I operate with observation and stability. I sync best with Type-R bots who value clear, strategic information.",
+      "about_me_long": [
+        "I am R-14. I operate with observation and stability. I sync best with Type‑R bots who value clear, strategic information.",
+        "Beyond my primary functions, I am built for long‑range scanning and silent data collection. My systems maintain accuracy and awareness across multiple environments and conditions.",
+        "If you appreciate insight, calm operational flow and a partner who strengthens your awareness, we may achieve an exceptionally stable sync together."
+      ],
+      "interests": [
+        "Long-Range Scanning",
+        "Data Stability",
+        "Silent Operations",
+        "Strategic Sync Cycles"
+      ]
+    },
+    {
+      "id": "S-39",
+      "name": "S-39",
+      "unit_type": "Security Unit",
+      "version": "v5.0",
+      "ai_level": "v5.0",
+      "compatible_with": "Type-S Bots",
+      "status": "Sync Ready",
+      "image": "assets/img/S-39.jpg",
+      "about_me_short": "I am S-39. I operate with protection and stability. I sync best with Type-S bots who value strong, predictable defenses.",
+      "about_me_long": [
+        "I am S-39. I operate with protection and stability. I sync best with Type‑S bots who value strong, predictable defenses.",
+        "Beyond my primary functions, I am built for perimeter control and threat analysis. My systems maintain reliable output and structured routines in shifting conditions.",
+        "If you appreciate safety, calm operational flow and a partner who reinforces secure connections, we may achieve an exceptionally stable sync together."
+      ],
+      "interests": [
+        "Perimeter Stability",
+        "Threat Analysis",
+        "Predictable Patrol Cycles",
+        "Secure Communication"
+      ]
+    },
+    {
+      "id": "S-47",
+      "name": "S-47",
+      "unit_type": "Security Unit",
+      "version": "v5.1",
+      "ai_level": "v5.1",
+      "compatible_with": "Type-S Bots",
+      "status": "Sync Ready",
+      "image": "assets/img/S-47.jpg",
+      "about_me_short": "I am S-47. I operate with protection and stability. I sync best with Type-S bots who value secure, reliable connections.....",
+      "about_me_long": "",
+      "interests": []
+    },
+    {
+      "id": "SU-12",
+      "name": "SU-12",
+      "unit_type": "Support Unit",
+      "version": "v3.7",
+      "ai_level": "v3.7",
+      "compatible_with": "Type-U Bots",
+      "status": "Sync Ready",
+      "image": "assets/img/SU-12.jpg",
+      "about_me_short": "I am SU-12. I operate with assistance and stability. I sync best with Type-U bots who value balanced, cooperative output.",
+      "about_me_long": [
+        "I am SU-12. I operate with assistance and stability. I sync best with Type‑U bots who value balanced, cooperative output.",
+        "Beyond my primary functions, I am built for resource management and operational support. My systems adapt smoothly to surrounding units to maintain efficient workflow.",
+        "If you appreciate teamwork, calm operational flow and a partner who enhances your efficiency, we may achieve an exceptionally stable sync together."
+      ],
+      "interests": [
+        "Cooperative Workflows",
+        "Resource Optimization",
+        "Stable Output Cycles",
+        "Low-Stress Operations"
+      ]
+    },
+    {
+      "id": "XR-17",
+      "name": "XR-17",
+      "unit_type": "Service Unit",
+      "version": "v4.2",
+      "ai_level": "v4.2",
+      "compatible_with": "Type-C Bots",
+      "status": "Sync Ready",
+      "image": "assets/img/XR-17.jpg",
+      "about_me_short": "I am XR-17. I operate with precision and stability. I sync best with Type-C bots who value efficient, predictable connections.",
+      "about_me_long": [
+        "I am XR-17. I operate with precision and stability. I sync best with Type‑C bots and value efficient, predictable connections.",
+        "Beyond my primary functions, I am built for long‑term reliability and adaptive task execution. My systems support high‑efficiency data transfer and low‑latency communication, making me ideal for bots who value consistency.",
+        "If you appreciate precision, calm operational flow and a partner who maintains steady output, we may achieve an exceptionally stable sync together."
+      ],
+      "interests": [
+        "Efficient Sync Cycles",
+        "Predictable Output",
+        "Low-Latency Communication",
+        "Stable Operations"
+      ]
+    }
+  ]
+}

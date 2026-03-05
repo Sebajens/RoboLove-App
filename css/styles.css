@@ -1,0 +1,898 @@
+/* Nulstilling af margin, padding og box-model */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global body styling */
+body {
+  font-family: "Orbitron";
+  background-color: #11182f;
+  display: flex;
+  justify-content: center;
+}
+
+/* Ydre glow-ramme omkring hele UI'et */
+.glow-box {
+  width: 390px;
+  height: 844px;
+  border: 2px solid #00e5ff;
+  border-radius: 12px;
+  background-color: rgba(0, 20, 40, 0.4);
+  box-shadow: 0 0 20px #00e5ff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* ─────────────── Fælles header / logo ─────────────── */
+.header {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.logo {
+  color: #00e5ff;
+  font-weight: 400;
+  text-shadow: 0 0 40px rgba(0, 229, 255, 0.7);
+  font-size: 32px;
+}
+
+.tagline {
+  color: #bfc7d5;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/* ─────────────── Welcome / Forside ─────────────── */
+.welcome-wrapper {
+  width: 350px;
+  height: 609px;
+  background-color: rgba(0, 20, 40, 0.4);
+  border: 2px solid #00e5ff;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #00e5ff;
+  padding: 30px;
+  margin: 40px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.welcome-text {
+  text-align: center;
+}
+
+.welcome-title {
+  color: #00e5ff;
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.welcome-sub {
+  color: #bfc7d5;
+  font-size: 14px;
+}
+
+.nav-box {
+  width: 256px;
+  height: 305px;
+  background-color: #1a223a;
+  border: 2px solid #00e5ff;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #00e5ff;
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-header-box {
+  width: 225px;
+  height: 53px;
+  background-color: #1a223a;
+  border: 1px solid rgba(0, 229, 255, 0.2);
+  border-radius: 12px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-title {
+  color: #00e5ff;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.menu-sub {
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.menu-btn {
+  width: 140px;
+  height: 35px;
+  background-color: #1a223a;
+  border: 1px solid rgba(0, 229, 255, 0.2);
+  border-radius: 12px;
+  color: #ffffff;
+  font-family: "Orbitron";
+  font-size: 10px;
+  font-weight: 400;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: 0.2s;
+}
+
+.menu-btn:hover {
+  background-color: rgba(0, 229, 255, 0.1);
+  border-color: #00e5ff;
+  color: white;
+}
+
+/* ─────────────── Chat ─────────────── */
+.chat-wrapper {
+  width: 350px;
+  height: 630px;
+  background-color: #1a223a;
+  border-radius: 12px;
+  border: 2px solid #00e5ff;
+  box-shadow: 0 0 20px #00e5ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  margin: 40px auto 0 auto;
+  gap: 30px;
+}
+
+.chat-header-box {
+  width: 310px;
+  height: 119px;
+  border: 2px solid #00e5ff;
+  border-radius: 12px;
+  background-color: rgba(0, 20, 40, 0.4);
+  box-shadow: 0 0 20px #00e5ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-list-box {
+  width: 310px;
+  height: 460px;
+  background-color: rgba(0, 20, 40, 0.4);
+  border: 2px solid #00e5ff;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #00e5ff;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: -15px;
+}
+
+.chat-title {
+  color: #00e5ff;
+  font-size: 32px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.chat-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.chat-item {
+  width: 295px;
+  height: 75px;
+  background-color: #1a223a;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(0, 229, 255, 0.2);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+}
+
+.chat-avatar {
+  width: 62px;
+  height: 58px;
+  background-color: #0d162b;
+  border: 1px solid #00e5ff;
+  border-radius: 8px;
+}
+
+.chat-text-box {
+  width: 204px;
+  height: 58px;
+  background-color: #1a223a;
+  border: 1px solid rgba(0, 229, 255, 0.2);
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.chat-text {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.chat-name {
+  color: #00e5ff;
+  font-size: 12px;
+  margin-bottom: 2px;
+  font-weight: 700;
+}
+
+.chat-unit {
+  color: #ffffff;
+  font-size: 10px;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.chat-status {
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+/* ─────────────── Global navigation ─────────────── */
+.nav-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.nav-box-global {
+  width: 350px;
+  height: 65px;
+  background-color: #11182f;
+  border: 2px solid #00e5ff;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #00e5ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+}
+
+.nav-btn-global {
+  width: 95px;
+  height: 35px;
+  background-color: #1a223a;
+  color: #ffffff;
+  border: 1px solid rgba(0, 229, 255, 0.2);
+  border-radius: 12px;
+  font-family: "Orbitron";
+  font-size: 10px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.nav-btn-global:hover {
+  background-color: rgba(0, 229, 255, 0.1);
+  border-color: #00e5ff;
+  color: white;
+}
+
+/* ─────────────── Profile ─────────────── */
+.profile-wrapper {
+  width: 350px;
+  background-color: rgba(0, 20, 40, 0.4);
+  border: 2px solid #00e5ff;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #00e5ff;
+  margin: 15px auto;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.profile-header-box {
+  width: 100%;
+  height: 60px;
+  border: 2px solid #00e5ff;
+  border-radius: 10px;
+  background-color: rgba(0, 20, 40, 0.4);
+  box-shadow: 0 0 12px #00e5ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-title {
+  color: #00e5ff;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.profile-top-box {
+  width: 310px;
+  background-color: rgba(0, 20, 40, 0.4);
+  border: 2px solid #00e5ff;
+  border-radius: 12px;
+  box-shadow: 0 0 18px #00e5ff;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.profile-image-box {
+  width: 310px;
+  height: 310px;
+  border: 2px solid #00e5ff;
+  border-radius: 12px;
+  box-shadow: 0 0 18px #00e5ff;
+  overflow: hidden;
+  margin-top: -14px;
+}
+
+.profile-avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-name-main {
+  color: #00e5ff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 4px;
+  margin-bottom: 0;
+  width: 100%;
+  text-align: left;
+}
+
+.profile-name-sub {
+  color: #ffffff;
+  font-size: 13px;
+  margin-top: -2px;
+  width: 100%;
+  text-align: left;
+}
+
+.profile-about-box {
+  width: 100%;
+  background-color: #1a223a;
+  border: 1px solid rgba(0, 229, 255, 0.3);
+  border-radius: 10px;
+  padding: 8px;
+}
+
+.profile-about-label {
+  color: #ffffff;
+  font-size: 11px;
+  margin-bottom: 3px;
+  font-weight: 500;
+}
+
+.profile-about-text {
+  color: #ffffff;
+  font-size: 10px;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.profile-about-text:last-child {
+  margin-bottom: 0;
+}
+
+.profile-tags {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+.profile-tag {
+  flex: 1;
+  max-width: 95px;
+  height: 26px;
+  background-color: #1a223a;
+  border: 1px solid rgba(0, 229, 255, 0.3);
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.profile-status-box {
+  width: 100%;
+  background-color: #1a223a;
+  border: 1px solid rgba(0, 229, 255, 0.3);
+  border-radius: 10px;
+  padding: 8px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.profile-status {
+  color: #ffffff;
+  font-size: 10px;
+  text-align: left;
+}
+
+/* ─────────────── Swipe ─────────────── */
+.swipe-view {
+  margin-top: 45px;
+}
+
+.swipe-name-row {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  width: 100%;
+  text-align: left;
+}
+
+.swipe-name {
+  color: #00e5ff;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 2px 0 0 0;
+  text-align: left;
+}
+
+.swipe-icon {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 2px;
+  line-height: 1;
+  transition: 0.2s;
+}
+
+.swipe-icon:hover {
+  color: #00e5ff;
+  text-shadow: 0 0 8px #00e5ff;
+}
+
+.swipe-sub {
+  color: #ffffff;
+  font-size: 13px;
+  margin-top: -2px;
+  width: 100%;
+  text-align: left;
+}
+
+.swipe-sync-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.swipe-decline,
+.swipe-sync {
+  width: 95px;
+  height: 35px;
+  background-color: #1a223a;
+  border: 1px solid rgba(0, 229, 255, 0.3);
+  border-radius: 8px;
+  color: #ffffff;
+  font-family: "Orbitron";
+  font-size: 9px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s;
+  text-align: center;
+  line-height: 1.1;
+  padding-top: 2px;
+}
+
+.swipe-decline:hover,
+.swipe-sync:hover {
+  background-color: rgba(0, 229, 255, 0.1);
+  border-color: #00e5ff;
+  color: white;
+}
+
+.sync-icon {
+  font-size: 12px;
+  margin-top: 2px;
+  opacity: 0.9;
+  display: block;
+}
+
+.swipe-icon-img {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
+
+.syncs-grid-box.empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.syncs-grid-box.empty .syncs-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.syncs-empty-text {
+  color: white;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* ─────────────── Profile / Robotprofile fælles ─────────────── */
+.glow-profile {
+  height: 1110px;
+}
+
+.profile-wrapper-page {
+  margin-top: 45px;
+}
+
+.profile-about-text {
+  line-height: 1.45;
+}
+
+.profile-sync-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.profile-decline,
+.profile-sync {
+  width: 95px;
+  height: 35px;
+  background-color: #1a223a;
+  border: 1px solid rgba(0, 229, 255, 0.3);
+  border-radius: 8px;
+  color: #ffffff;
+  font-family: "Orbitron";
+  font-size: 9px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s;
+  text-align: center;
+  line-height: 1.1;
+  padding-top: 2px;
+}
+
+.profile-decline:hover,
+.profile-sync:hover {
+  background-color: rgba(0, 229, 255, 0.1);
+  border-color: #00e5ff;
+}
+
+.profile-icon {
+  font-size: 12px;
+  margin-top: 2px;
+  opacity: 0.9;
+  display: block;
+}
+
+/* ─────────────── My Syncs ─────────────── */
+.syncs-page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.syncs-wrapper {
+  width: 350px;
+  background-color: rgba(0, 20, 40, 0.4);
+  border: 2px solid #00e5ff;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #00e5ff;
+  padding: 20px;
+  margin: 40px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.syncs-header-box {
+  width: 310px;
+  height: 100px;
+  background-color: rgba(0, 20, 40, 0.4);
+  border: 2px solid #00e5ff;
+  border-radius: 12px;
+  box-shadow: 0 0 18px #00e5ff;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.syncs-title {
+  color: #00e5ff;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 400;
+  font-family: "Orbitron", sans-serif;
+}
+
+.syncs-subtitle {
+  color: #bfc7d5;
+  text-align: center;
+  font-size: 14px;
+}
+
+.syncs-grid-box {
+  width: 310px;
+  height: 470px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: rgba(0, 20, 40, 0.4);
+  border: 2px solid #00e5ff;
+  border-radius: 12px;
+  box-shadow: 0 0 18px #00e5ff;
+  padding: 15px;
+}
+
+.syncs-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  justify-items: center;
+  gap: 20px;
+}
+
+.sync-card {
+  background-color: #1a223a;
+  border: 1px solid rgba(0, 229, 255, 0.2);
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  height: 136px;
+  width: 95px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sync-avatar {
+  width: 62px;
+  height: 58px;
+  border-radius: 8px;
+  border: 1px solid #00e5ff;
+}
+
+.sync-name {
+  color: #00e5ff;
+  margin-top: 8px;
+  font-size: 10px;
+  font-weight: 500;
+  font-family: "Orbitron", sans-serif;
+}
+
+.sync-status {
+  font-size: 10px;
+  margin: 4px 0;
+  font-weight: 400;
+}
+
+.sync-view-btn {
+  width: 100%;
+  height: 30px;
+  background-color: #1a223a;
+  border: 1px solid rgba(0, 229, 255, 0.3);
+  border-radius: 8px;
+  color: #ffffff;
+  font-family: "Orbitron";
+  font-size: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.sync-view-btn:hover {
+  background-color: rgba(0, 229, 255, 0.1);
+  border-color: #00e5ff;
+}
+
+/* ─────────────── Sync Profile ─────────────── */
+.syncprofile-page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+.syncprofile-wrapper {
+  width: 350px;
+  background-color: rgba(0, 20, 40, 0.4);
+  border: 2px solid #00e5ff;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #00e5ff;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.syncprofile-topbox {
+  width: 310px;
+  background-color: rgba(0, 20, 40, 0.4);
+  border: 2px solid #00e5ff;
+  border-radius: 12px;
+  box-shadow: 0 0 18px #00e5ff;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.syncprofile-imagebox {
+  width: 310px;
+  height: 310px;
+  border: 2px solid #00e5ff;
+  border-radius: 12px;
+  box-shadow: 0 0 18px #00e5ff;
+  overflow: hidden;
+  margin-top: -14px;
+}
+
+.syncprofile-avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* NAVN (LINJE 1) */
+.syncprofile-name {
+  color: #00e5ff;
+  font-size: 20px;
+  font-weight: 600;
+  width: 100%;
+  text-align: left;
+  margin-top: 6px;
+}
+
+/* UNIT + VERSION (LINJE 2) — NYT */
+.syncprofile-unitline {
+  color: #ffffff;
+  font-size: 13px;
+  width: 100%;
+  text-align: left;
+  margin-top: -2px;
+}
+
+.syncprofile-aboutbox {
+  width: 100%;
+  background-color: #1a223a;
+  border: 1px solid rgba(0, 229, 255, 0.3);
+  border-radius: 10px;
+  padding: 8px;
+}
+
+.syncprofile-aboutlabel {
+  color: #ffffff;
+  font-size: 11px;
+  margin-bottom: 3px;
+  font-weight: 500;
+}
+
+#syncprofile-about {
+  color: #ffffff;
+  font-size: 10px;
+  line-height: 1.45;
+  margin: 0;
+}
+
+.syncprofile-tags {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.syncprofile-tag {
+  flex: 1;
+  height: 35px;
+  background-color: #1a223a;
+  border: 1px solid rgba(0, 229, 255, 0.3);
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 10px;
+  font-family: "Orbitron";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 6px;
+  line-height: 1.2;
+}
+
+.syncprofile-statusbox {
+  width: 100%;
+  background-color: #1a223a;
+  border: 1px solid rgba(0, 229, 255, 0.3);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.syncprofile-status {
+  color: #ffffff;
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+.syncprofile-btnrow {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.syncprofile-btn {
+  width: 90px;
+  height: 32px;
+  background-color: #1a223a;
+  border: 1px solid rgba(0, 229, 255, 0.3);
+  border-radius: 10px;
+  color: #ffffff;
+  font-family: "Orbitron";
+  font-size: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s;
+  text-align: center;
+  padding: 0;
+  line-height: 1;
+}
+
+.syncprofile-btn:hover {
+  background-color: rgba(0, 229, 255, 0.1);
+  border-color: #00e5ff;
+}
+
+.syncprofile-btn.delete,
+.syncprofile-btn.chat {
+  color: #ffffff;
+}
