@@ -5,7 +5,7 @@ export async function loadSwipe() {
   const glowBox = document.querySelector(".glow-box");
 
   // Henter robotdata fra JSON-filen
-  const response = await fetch("../data/robots.json");
+  const response = await fetch("../../data/robots.json");
   const data = await response.json();
 
   // Fjerner S-47 fra swipe-listen
