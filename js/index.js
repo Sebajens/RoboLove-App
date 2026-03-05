@@ -27,7 +27,7 @@ else if (page.includes("myprofile.html")) {
 }
 
 // Swipe
-else if (page.includes("swipe.html") || page === "/" || page.endsWith("/")) {
+else if (page.includes("swipe.html")) {
   loadSwipe();
 }
 
