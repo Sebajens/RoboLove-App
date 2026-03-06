@@ -21,6 +21,19 @@ export async function loadSyncs() {
         <p class="syncs-subtitle">Your active connections</p>
       </div>
 
+      <div class="syncs-filter-box">
+        <select class="syncs-filter-select" id="syncs-filter">
+          <option value="all">All Units</option>
+          <option value="Cleaner Unit">Cleaner Unit</option>
+          <option value="Forge Unit">Forge Unit</option>
+          <option value="Medic Unit">Medic Unit</option>
+          <option value="Recon Unit">Recon Unit</option>
+          <option value="Security Unit">Security Unit</option>
+          <option value="Support Unit">Support Unit</option>
+          <option value="Service Unit">Service Unit</option>
+        </select>
+      </div>
+
       <div class="syncs-grid-box">
         <div class="syncs-grid"></div>
       </div>
@@ -34,7 +47,7 @@ export async function loadSyncs() {
   // Hent synced bots
   const syncedIds = JSON.parse(localStorage.getItem("syncedBots")) || [];
 
-  // ⭐ Hvis ingen synced bots → vis tom besked
+  // Hvis ingen synced bots → vis tom besked
   if (syncedIds.length === 0) {
     gridBox.classList.add("empty");
 
@@ -59,6 +72,7 @@ export async function loadSyncs() {
 
     const card = document.createElement("div");
     card.classList.add("sync-card");
+    card.setAttribute("data-unit", bot.unit_type);
 
     card.innerHTML = `
       <img class="sync-avatar" src="${bot.image}" alt="${bot.id}">
@@ -68,6 +82,19 @@ export async function loadSyncs() {
     `;
 
     grid.appendChild(card);
+  });
+
+  // Filtrering
+  document.getElementById("syncs-filter").addEventListener("change", (e) => {
+    const value = e.target.value;
+    document.querySelectorAll(".sync-card").forEach((card) => {
+      const unitType = card.getAttribute("data-unit");
+      if (value === "all" || unitType === value) {
+        card.style.display = "flex";
+      } else {
+        card.style.display = "none";
+      }
+    });
   });
 
   // View sync → åbn syncrobotprofile
