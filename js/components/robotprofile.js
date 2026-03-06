@@ -102,6 +102,7 @@ export async function loadRobotProfile() {
         <div class="profile-sync-row">
           <button class="profile-decline" id="decline-btn">
             Decline Sync
+            <span class="sync-icon">✖</span>
           </button>
 
           <button class="profile-decline" id="go-back-btn">
@@ -110,9 +111,10 @@ export async function loadRobotProfile() {
 
           <button class="profile-sync" id="sync-btn">
             Initiate Sync
+            <span class="sync-icon">❤</span>
           </button>
         </div>
-
+        
       </div>
 
     </div>
