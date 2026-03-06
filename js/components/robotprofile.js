@@ -114,7 +114,7 @@ export async function loadRobotProfile() {
             <span class="sync-icon">❤</span>
           </button>
         </div>
-        
+
       </div>
 
     </div>
