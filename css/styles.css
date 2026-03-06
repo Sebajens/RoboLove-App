@@ -561,7 +561,7 @@ body {
 
 /* ─────────────── Profile / Robotprofile fælles ─────────────── */
 .glow-profile {
-  height: 1110px;
+  min-height: 1110px;
 }
 
 .profile-wrapper-page {
