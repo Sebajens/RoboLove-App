@@ -922,4 +922,8 @@ body {
     width: 90vw;
     max-width: 350px;
   }
+
+  .glow-profile {
+    min-height: unset;
+  }
 }
